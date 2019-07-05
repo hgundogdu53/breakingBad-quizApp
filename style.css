@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../../images/background_image.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin:0;
+  padding: 0;
+  font-family: 'Audiowide', cursive;
+}
+#header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 20px 5px 10px;
+}
+
+.logo {
+  width: 220px;
+  flex-grow: 0;
+  flex-basis: 40px;
+  border-radius: 50%;
+}
+
+ul li {
+list-style: none;
+font-weight: 700;
+color: whitesmoke;
+font-size: 40px;
+padding: 10px;
+margin-left: 40px;
+}
+
+ul li::selection {
+  color: rgba(94, 231, 40, 0.89);
+}
+
+.titleButton {
+  display:inline-block;
+  color: whitesmoke;
+  padding-right: 25%;
+  padding-left: 5%;
+  margin-bottom: 5%;
+  margin-top: 1px;
+}
+
+.titleButton h1 {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  color: rgba(94, 231, 40, 0.89);
+}
+
+.titleButton button {
+  width: 150px;
+  height: 40px;
+  margin-left: 30%;
+  border-radius: 20px;
+  border-color: mediumturquoise;
+  text-align: center;
+  font-size: 15px;
+  color:whitesmoke;
+  background-color: rgba(95, 231, 40, 0.678);
+  font-family: 'Audiowide', cursive;
+
+}
+
+#startButton:hover, #startButton:focus {
+  box-shadow: inset 0 0 0 0.5em;
+  font-weight: bolder;
+  cursor: pointer;
+  color: rgb(4, 39, 4);
+}
+
+.quiz-form {
+  display: block;
+  color: white;
+  margin-right: 30%;
+  font-size: 0.6cm;
+  padding-left: 20px;
+}
+.answersAndSubmit {
+  border-style: none;
+}
+label:hover, label:focus{
+  color: green; 
+  cursor: pointer;
+  
+}
+
+.dataStore {
+  display: block;
+  padding: 5px;
+}
+
+.goodAnswer, .badAnswer, .resultPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.6cm;
+  max-height: 100%;
+  
+}
+.resultPage {
+  width: 120%;
+}
+
+#correct_Answer, #lastImage {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+#wrong_Answer {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+}
+
+
+.goodAnswer p, .badAnswer p, .resultPage h2{
+  display: block;
+  color:white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8cm;
+  max-width: 600px; 
+  margin-bottom: 5px;
+}
+
+#submitQuestion, #nextQ, #restartButton {
+  margin-bottom: 5px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 0.5cm;
+  font-family: 'Audiowide', cursive;
+  background: #2D8038;
+  font-weight: 500;
+  color: whitesmoke;
+  padding: 8px 35px;
+}
+#submitQuestion {
+  margin-left: 30%;
+}
+
+#submitQuestion:hover, #nextQ:hover,#restartButton:hover {
+  box-shadow: inset 0 0 0 0.2em;
+  font-weight: bolder;
+  cursor: pointer;
+  color: #278C5A;
+}

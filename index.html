@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Breaking Bad Quiz App</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <<link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="mainLogo">
+        <img class='logo' src="images/Breaking_Bad-logo.jpg" alt="logo"/>
+      </div>
+      <div class="questionAnswer">
+        <ul>
+          <li>Question: <span id = 'currentQuestion'>0</span>/10</li>
+          <li>Score: <span id = 'currentScore'>0</span></li>
+        </ul>
+      </div>
+    </header>
+      
+    <main role="title">
+      <div class="titleButton">
+        <h1>Remember My Name!</h1>
+        <h1>'Heisenberg'</h1>
+        <button type ="button" id="startButton">Let's Start</button>
+      </div>
+      <div class="js-quiz"></div>
+    </main>
+    
+
+    <script src="datastore.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
