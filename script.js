@@ -66,6 +66,8 @@ function checkAnswer() {
       <button id='nextQ'>Next</button></div>`);      
       score++;
       $('#currentScore').text(score);
+    } else if (selectedAnswer === undefined) {
+      return;
     } else {
       $('.js-quiz').html(`<div class = 'badAnswer'><p>Nope! That's not Right. Correct answer is "${correctAnswer}."</p><img src= "breaking-bad-wrong answer.jpg" id='wrong_Answer' alt= 'wrongAnswerIcon'/><button id='nextQ'>Next</button></div>`);
     }
